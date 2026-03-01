@@ -13,3 +13,6 @@ execute as @s[scores={dvz.class=3}] run function dvz:classes/baker/ability
 
 # Builder ability
 execute as @s[scores={dvz.class=4}] run function dvz:classes/builder/ability
+
+# Creeper ability
+execute as @s[scores={dvz.monster=4}] run function dvz:monsters/creeper/ability
