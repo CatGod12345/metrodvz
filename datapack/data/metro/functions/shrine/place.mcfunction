@@ -12,3 +12,8 @@ bossbar set dvz:shrine players @a
 # Build a filled circle of end_portal blocks (radius 3)
 # Center is the armor stand position
 execute as @e[type=armor_stand,tag=dvz.shrine,limit=1] at @s run fill ~-3 ~ ~-3 ~3 ~ ~3 end_portal replace air
+# Remove corners to make it circular
+execute as @e[type=armor_stand,tag=dvz.shrine,limit=1] at @s run setblock ~-3 ~ ~-3 air
+execute as @e[type=armor_stand,tag=dvz.shrine,limit=1] at @s run setblock ~-3 ~ ~3 air
+execute as @e[type=armor_stand,tag=dvz.shrine,limit=1] at @s run setblock ~3 ~ ~-3 air
+execute as @e[type=armor_stand,tag=dvz.shrine,limit=1] at @s run setblock ~3 ~ ~3 air
